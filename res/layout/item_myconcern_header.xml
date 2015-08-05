@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_color"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/myfriend_rl"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/common_btn_selector" >
+
+        <ImageView
+            android:id="@+id/myfriend_arrow"
+            style="@style/MyZoneSettingRightStyle"
+            android:contentDescription="@null"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/myfriend_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/myfriend" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/myfriend_arrow"
+            android:layout_toRightOf="@id/myfriend_img"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:text="@string/myfriend_rl"
+                android:textColor="@color/main_txt_color"
+                android:textSize="@dimen/main_font_size" />
+
+            <ImageView
+                android:id="@+id/myfriend_rl_redHot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/hd"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View style="@style/HonizalLine" />
+
+    <RelativeLayout
+        android:id="@+id/favorite_merchant_rl"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/common_btn_selector" >
+
+        <ImageView
+            android:id="@+id/favorite_merchant_arrow"
+            style="@style/MyZoneSettingRightStyle"
+            android:contentDescription="@null"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/favorite_merchant_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/favorite_merchant" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/favorite_merchant_arrow"
+            android:layout_toRightOf="@id/favorite_merchant_img"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:text="@string/favorite_merchant_rl"
+                android:textColor="@color/main_txt_color"
+                android:textSize="@dimen/main_font_size" />
+
+            <ImageView
+                android:id="@+id/favorite_merchant_rl_redHot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/hd"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View style="@style/HonizalLine" />
+
+    <RelativeLayout
+        android:id="@+id/service_rl"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/common_btn_selector" >
+
+        <ImageView
+            android:id="@+id/service_arrow"
+            style="@style/MyZoneSettingRightStyle"
+            android:contentDescription="@null"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/service_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/service" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/service_arrow"
+            android:layout_toRightOf="@id/service_img"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:text="@string/service_rl"
+                android:textColor="@color/main_txt_color"
+                android:textSize="@dimen/main_font_size" />
+
+            <ImageView
+                android:id="@+id/service_redHot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/hd"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View style="@style/HonizalLine" />
+
+    <RelativeLayout
+        android:id="@+id/guess_love_rl"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/common_btn_selector" >
+
+        <ImageView
+            android:id="@+id/guess_love_arrow"
+            style="@style/MyZoneSettingRightStyle"
+            android:contentDescription="@null"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/guess_love_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/guess_love" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/guess_love_arrow"
+            android:layout_toRightOf="@id/guess_love_img"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:text="@string/guess_love_rl"
+                android:textColor="@color/main_txt_color"
+                android:textSize="@dimen/main_font_size" />
+
+            <ImageView
+                android:id="@+id/guess_love_rl_redHot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/hd"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="---最近联系人---"
+        android:textColor="@color/main_txt_color"
+        android:textSize="@dimen/main_font_size" />
+
+</LinearLayout>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    >
+    <com.yulinoo.plat.life.ui.widget.refresh.SwipeRefreshLayout
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <com.yulinoo.plat.life.ui.widget.MeNormalListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            />
+    </com.yulinoo.plat.life.ui.widget.refresh.SwipeRefreshLayout>
+</FrameLayout>
+
+
+<!-- 
+<com.yulinoo.plat.life.ui.widget.StretchScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:fillViewport="true"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:paddingBottom="50dp" >
+
+        <FrameLayout
+            android:id="@+id/top_fl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-120dp"
+            android:background="@color/white" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/background_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:contentDescription="@null"
+                        android:scaleType="fitXY"
+                        android:src="@null" />
+
+                    <LinearLayout
+                        android:id="@+id/name_and_num_ll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="100dp"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/nick_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="张三"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/main_font_size" />
+
+                            <ImageView
+                                android:id="@+id/usr_sex"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="5dp"
+                                android:src="@drawable/man_selected" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/view_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="浏览:30"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/assist_font_size" />
+
+                            <View
+                                style="@style/Verticaline"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@color/white" />
+
+                            <TextView
+                                android:id="@+id/fans_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="粉丝:30"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/assist_font_size" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/addr_and_sign_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="100dp" >
+
+                    <TextView
+                        android:id="@+id/shop_addr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="来自洋子江商务小区"
+                        android:textColor="@color/addr_color"
+                        android:textSize="@dimen/assist_font_size" />
+
+                    <TextView
+                        android:id="@+id/checktxt"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/main_txt_color"
+                        android:textSize="@dimen/assist_font_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/usr_header"
+                android:layout_width="@dimen/bigger_header_size"
+                android:layout_height="@dimen/bigger_header_size"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="200dp"
+                android:contentDescription="@null"
+                android:src="@drawable/default_avatar" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/function_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:paddingBottom="5dp" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/message_center"
+                    style="@style/WeiboContFunctionNormalStyle"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center" >
+
+                    <RelativeLayout
+                        android:id="@+id/ms_rl"
+                        android:layout_width="20dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center_vertical" >
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/msg" />
+
+                        <ImageView
+                            android:id="@+id/redHot"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:src="@drawable/hd"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_toRightOf="@id/ms_rl"
+                        android:gravity="center_vertical"
+                        android:text="消息中心"
+                        android:textColor="@color/main_txt_color"
+                        android:textSize="@dimen/main_font_size" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/open_shop_tv"
+                    style="@style/WeiboContFunctionNormalStyle"
+                    android:layout_marginLeft="5dp"
+                    android:text="小区开店"
+                    android:textColor="@color/main_txt_color"
+                    android:textSize="@dimen/main_font_size" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/menu_color" >
+            <com.yulinoo.plat.life.ui.widget.MyTab
+                android:id="@+id/mytab"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/usr_zone_menu_height"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" />
+        </RelativeLayout>
+        <View
+            android:id="@+id/shadow_line"
+            style="@style/HonizalLine"
+            android:layout_height="1dp"
+            android:background="@color/jianbian" />
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <TextView
+            android:id="@+id/footer_tv"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:text="已到达最后，马上为你加载更多"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</com.yulinoo.plat.life.ui.widget.StretchScrollView> -->

@@ -1,0 +1,293 @@
+<resources>
+
+    <style name="NoTitle" parent="android:Theme.NoTitleBar" />
+
+    <style name="top_category_scroll_view_item_text">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="menu_tab_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/menu_unselected</item>
+    </style>
+
+    <style name="UsrZoneFunctionButtonStyle">
+
+        <!-- 用户中心功能键样式 -->
+        <item name="android:layout_height">30dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:background">@drawable/usr_zone_function_btn</item>
+        <item name="android:textColor">@color/main_txt_color</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="key_pad_style">
+        <item name="android:layout_width">28dp</item>
+        <item name="android:layout_height">28dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/main_txt_color</item>
+        <item name="android:textSize">@dimen/main_font_size</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:background">@drawable/choice_zm_btn</item>
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+    <style name="AnimationFade">
+
+        <!-- PopupWindow左右弹出的效果 -->
+        <item name="android:windowEnterAnimation">@anim/in_righttoleft</item>
+        <item name="android:windowExitAnimation">@anim/out_lefttoright</item>
+    </style>
+    <!-- 水平分隔线 -->
+    <style name="HonizalLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/background_color</item>
+    </style>
+
+    <style name="HonizalLine1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#d55f10</item>
+    </style>
+
+    <style name="HonizalLine2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#d55f10</item>
+    </style>
+
+    <style name="Verticaline">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/background_color</item>
+    </style>
+    <!-- 主页中的父容器的样式 -->
+    <style name="IndexTitleParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
+    <style name="IndexParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="IndexParent_1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="IndexTitleTxtStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:textSize">@dimen/main_font_size</item>
+        <item name="android:textColor">@color/main_txt_color</item>
+    </style>
+    <!-- 主页中的主页左边标题样式 -->
+    <style name="IndexLeft">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:textSize">@dimen/assist_font_size</item>
+        <item name="android:textColor">@color/assist_txt_color</item>
+    </style>
+    <!-- 主页中的主页右边标题样式 -->
+    <style name="IndexRight">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:textSize">@dimen/assist_font_size</item>
+        <item name="android:textColor">@color/main_txt_color</item>
+    </style>
+
+    <style name="chat_text_date_style">
+        <item name="android:padding">2dp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:background">#bfbfbf</item>
+    </style>
+
+    <style name="chat_text_name_style">
+        <item name="android:textColor">@color/assist_txt_color</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="ChatSendButtonStyle">
+
+        <!-- 聊天的发送按钮 -->
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/chat_send_btn</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/send_message</item>
+        <item name="android:textSize">@dimen/main_font_size</item>
+    </style>
+
+    <style name="LeftRightSelected">
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">28dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="LeftRightNormal">
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">28dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/me_main_color</item>
+    </style>
+
+    <style name="RegisterParentStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="RegisterDescStyle">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/main_txt_color</item>
+        <item name="android:textSize">@dimen/assist_font_size</item>
+    </style>
+
+    <style name="RegisterInputStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/main_txt_color</item>
+        <item name="android:textSize">@dimen/assist_font_size</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="MyZoneSettingLeftStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:textColor">@color/main_txt_color</item>
+    </style>
+
+    <style name="MyZoneSettingRightStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@drawable/arrow_right</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <style name="WeiboContFunctionNormalStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/function_height</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:background">@drawable/comment_btn</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:textSize">@dimen/main_font_size</item>
+        <item name="android:textColor">@color/main_txt_color</item>
+        <item name="android:drawablePadding">@dimen/left_picture_to_txt_padding</item>
+    </style>
+    <!-- item中描述的标题 -->
+    <style name="DescMainTitleStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/main_font_size</item>
+        <item name="android:textColor">@color/main_txt_color</item>
+    </style>
+    <!-- item中描述的标题 -->
+    <style name="DescDescTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/assist_font_size</item>
+        <item name="android:textColor">@color/assist_txt_color</item>
+    </style>
+
+    <!-- 关注的样式 -->
+    <style name="ConcernStyle">
+        <item name="android:layout_width">@dimen/function_width</item>
+        <item name="android:layout_height">@dimen/function_height</item>
+        <item name="android:text">@string/add_concern</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/main_font_size</item>
+        <item name="android:textColor">@drawable/concern_selected_text</item>
+        <item name="android:background">@drawable/concern_selected_background</item>
+    </style>
+
+    <style name="WeiboContFunctionOkStyle" parent="@style/WeiboContFunctionNormalStyle">
+        <item name="android:background">@drawable/ok_btn</item>
+    </style>
+
+    <style name="AnimActivityTheme" parent="android:Theme.NoTitleBar"></style>
+    
+    <style name="neighbour_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowBackground">@color/shadow</item><!--背景透明-->
+        <item name="android:backgroundDimEnabled">false</item><!--模糊-->
+    </style>
+    
+    
+    <!--
+    <style name="AnimActivityTheme" parent="android:Theme.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/FeelyouWindowAnimTheme</item>
+    </style>
+
+    <style name="FeelyouWindowAnimTheme" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/in_from_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/out_to_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/out_to_right</item>
+        <item name="android:activityCloseExitAnimation">@anim/in_from_left</item>
+    </style>
+    -->
+
+</resources>

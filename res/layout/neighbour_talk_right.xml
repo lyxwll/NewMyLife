@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color" >
+
+    <!-- 
+    <com.yulinoo.plat.life.ui.widget.refresh.SwipeRefreshLayout
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.yulinoo.plat.life.ui.widget.MeNormalListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" />
+    </com.yulinoo.plat.life.ui.widget.refresh.SwipeRefreshLayout> -->
+    <com.yulinoo.plat.life.ui.widget.listview.XListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:cacheColorHint="#00000000"/>
+	<FrameLayout 
+	    android:id="@+id/shadow_background"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:clickable="true"
+    	android:focusable="true"
+	    android:background="@color/shadow"
+	    android:visibility="gone"
+	    >
+	    
+	</FrameLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="5dp" >
+
+        <ImageView
+            android:id="@+id/publish_note"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/add_note" />
+
+        <ImageView
+            android:id="@+id/open_forum"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_above="@id/publish_note"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@null"
+            android:src="@drawable/open_forum" 
+            android:visibility="gone"
+            />
+
+        <FrameLayout
+            android:id="@+id/forum_category_rl"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_marginBottom="10dp"
+            android:layout_above="@id/open_forum"
+            android:visibility="gone" >
+			<TextView 
+			    android:id="@+id/choice_forum_position"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="@string/choice_forum_position"
+			    android:layout_gravity="center_horizontal"
+			    android:visibility="gone"
+			    />
+            <android.support.v4.view.ViewPager
+                android:id="@+id/forumViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" 
+                android:layout_marginTop="20dp"
+                />
+
+            <LinearLayout
+                android:id="@+id/page_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:orientation="horizontal" />
+        </FrameLayout>
+    </RelativeLayout>
+
+
+</FrameLayout>

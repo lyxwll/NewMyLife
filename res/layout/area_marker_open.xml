@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:background="@drawable/neighbour_info_window"
+    >
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="140dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/white"
+         >
+
+        <RelativeLayout
+            android:id="@+id/area_top_rl"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="3dp" >
+
+            <View
+                android:id="@+id/title_fgx"
+                style="@style/HonizalLine"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="2dp" />
+
+            <RelativeLayout
+                android:id="@+id/close_infowindow"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_above="@id/title_fgx"
+                android:layout_alignParentRight="true"
+                android:gravity="center" >
+                <ImageView
+                    android:id="@+id/close_infowindow_iv"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/close_gray" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/area_name_"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_above="@id/title_fgx"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@id/close_infowindow"
+                android:gravity="center_vertical"
+                android:text="洋子江商务小区"
+                android:textColor="@color/main_txt_color"
+                android:textSize="@dimen/main_font_size"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/info_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/area_top_rl"
+            android:paddingLeft="3dp" >
+
+            <ImageView
+                android:id="@+id/area_picture"
+                android:layout_width="@dimen/bigger_header_size"
+                android:layout_height="@dimen/bigger_header_size"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/logo" />
+
+            <LinearLayout
+                android:id="@+id/marker_open_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@id/area_picture"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/area_instance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="相距100米"
+                    android:textColor="@color/assist_txt_color"
+                    android:textSize="@dimen/assist_font_size" />
+
+                <TextView
+                    android:id="@+id/enter_merchant_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="入驻商数：201家"
+                    android:textColor="@color/main_txt_color"
+                    android:textSize="@dimen/assist_font_size" />
+
+                <TextView
+                    android:id="@+id/enter_usr_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="入驻人数：83人"
+                    android:textColor="@color/main_txt_color"
+                    android:textSize="@dimen/assist_font_size" />
+
+                <TextView
+                    android:id="@+id/goto_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/goto_area"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="进入小区聊天"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/assist_font_size" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

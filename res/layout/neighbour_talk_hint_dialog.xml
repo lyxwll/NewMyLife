@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/neighbour_talk_hint_background"
+    android:paddingBottom="20dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="10dp"
+    android:paddingTop="20dp" >
+
+    <ImageView
+        android:id="@+id/hint_iv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:contentDescription="@null"
+        android:focusable="false"
+        android:src="@drawable/man_selected" />
+
+    <TextView
+        android:id="@+id/hint_content_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/hint_iv"
+        android:background="@drawable/chatfrom_bg"
+        android:gravity="left|center_vertical"
+        android:lineSpacingExtra="@dimen/weibo_text_line_space"
+        android:textColor="#545454"
+        android:textSize="15sp" />
+
+</RelativeLayout>

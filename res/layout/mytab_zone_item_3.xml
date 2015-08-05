@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="89dp"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:id="@+id/item_line"
+        android:layout_width="89dp"
+        android:layout_height="2dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/me_main_color"
+        />
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="89dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="国内消息"
+        android:textColor="@color/main_txt_color"
+        android:textSize="@dimen/main_font_size"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/item_line"
+        />
+</RelativeLayout>

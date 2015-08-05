@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/zmq"
+            style="@style/key_pad_style"
+            android:text="q" />
+
+        <TextView
+            android:id="@+id/zmw"
+            style="@style/key_pad_style"
+            android:text="w" />
+
+        <TextView
+            android:id="@+id/zme"
+            style="@style/key_pad_style"
+            android:text="e" />
+
+        <TextView
+            android:id="@+id/zmr"
+            style="@style/key_pad_style"
+            android:text="r" />
+
+        <TextView
+            android:id="@+id/zmt"
+            style="@style/key_pad_style"
+            android:text="t" />
+
+        <TextView
+            android:id="@+id/zmy"
+            style="@style/key_pad_style"
+            android:text="y" />
+
+        <TextView
+            android:id="@+id/zmu"
+            style="@style/key_pad_style"
+            android:text="u" />
+
+        <TextView
+            android:id="@+id/zmi"
+            style="@style/key_pad_style"
+            android:text="i" />
+
+        <TextView
+            android:id="@+id/zmo"
+            style="@style/key_pad_style"
+            android:text="o" />
+
+        <TextView
+            android:id="@+id/zmp"
+            style="@style/key_pad_style"
+            android:text="p" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/zma"
+            style="@style/key_pad_style"
+            android:text="a" />
+
+        <TextView
+            android:id="@+id/zms"
+            style="@style/key_pad_style"
+            android:text="s" />
+
+        <TextView
+            android:id="@+id/zmd"
+            style="@style/key_pad_style"
+            android:text="d" />
+
+        <TextView
+            android:id="@+id/zmf"
+            style="@style/key_pad_style"
+            android:text="f" />
+
+        <TextView
+            android:id="@+id/zmg"
+            style="@style/key_pad_style"
+            android:text="g" />
+
+        <TextView
+            android:id="@+id/zmh"
+            style="@style/key_pad_style"
+            android:text="h" />
+
+        <TextView
+            android:id="@+id/zmj"
+            style="@style/key_pad_style"
+            android:text="j" />
+
+        <TextView
+            android:id="@+id/zmk"
+            style="@style/key_pad_style"
+            android:text="k" />
+
+        <TextView
+            android:id="@+id/zml"
+            style="@style/key_pad_style"
+            android:text="l" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/zmz"
+            style="@style/key_pad_style"
+            android:text="z" />
+
+        <TextView
+            android:id="@+id/zmx"
+            style="@style/key_pad_style"
+            android:text="x" />
+
+        <TextView
+            android:id="@+id/zmc"
+            style="@style/key_pad_style"
+            android:text="c" />
+
+        <TextView
+            android:id="@+id/zmv"
+            style="@style/key_pad_style"
+            android:text="v" />
+
+        <TextView
+            android:id="@+id/zmb"
+            style="@style/key_pad_style"
+            android:text="b" />
+
+        <TextView
+            android:id="@+id/zmn"
+            style="@style/key_pad_style"
+            android:text="n" />
+
+        <TextView
+            android:id="@+id/zmm"
+            style="@style/key_pad_style"
+            android:text="m" />
+
+        <FrameLayout
+            android:id="@+id/del_zm"
+            style="@style/key_pad_style" >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/del_pinyin" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pyszm"
+        style="@style/key_pad_style"
+        android:layout_width="268dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/pyszm"
+        />
+
+</LinearLayout><!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+	
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/zma"
+            style="@style/key_pad_style"
+            android:text="A" />
+
+        <TextView
+            android:id="@+id/zmi"
+            style="@style/key_pad_style"
+            android:text="I" />
+
+        <TextView
+            android:id="@+id/zmq"
+            style="@style/key_pad_style"
+            android:text="Q" />
+
+        <TextView
+            android:id="@+id/zmy"
+            style="@style/key_pad_style"
+            android:text="Y" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/zmb"
+            style="@style/key_pad_style"
+            android:text="B" />
+
+        <TextView
+            android:id="@+id/zmj"
+            style="@style/key_pad_style"
+            android:text="J" />
+
+        <TextView
+            android:id="@+id/zmr"
+            style="@style/key_pad_style"
+            android:text="R" />
+
+        <TextView
+            android:id="@+id/zmz"
+            style="@style/key_pad_style"
+            android:text="Z" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/zmc"
+            style="@style/key_pad_style"
+            android:text="C" />
+
+        <TextView
+            android:id="@+id/zmk"
+            style="@style/key_pad_style"
+            android:text="K" />
+
+        <TextView
+            android:id="@+id/zms"
+            style="@style/key_pad_style"
+            android:text="S" />
+        <FrameLayout
+            android:id="@+id/del_zm"
+            style="@style/key_pad_style"
+            >
+            <ImageView 
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/del_pinyin"
+                android:layout_gravity="center_horizontal"
+                />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="3dp"
+        android:layout_weight="5"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/zmd"
+                style="@style/key_pad_style"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="D" />
+
+            <TextView
+                android:id="@+id/zme"
+                style="@style/key_pad_style"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="E" />
+
+            <TextView
+                android:id="@+id/zmf"
+                style="@style/key_pad_style"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="F" />
+            <TextView
+                android:id="@+id/zmg"
+                style="@style/key_pad_style"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="G" />
+            <TextView
+                android:id="@+id/zmh"
+                style="@style/key_pad_style"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="H" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/zml"
+                style="@style/key_pad_style"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="L" />
+
+            <TextView
+                android:id="@+id/zmm"
+                style="@style/key_pad_style"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="M" />
+
+            <TextView
+                android:id="@+id/zmn"
+                style="@style/key_pad_style"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="N" />
+            <TextView
+                android:id="@+id/zmo"
+                style="@style/key_pad_style"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="O" />
+            <TextView
+                android:id="@+id/zmp"
+                style="@style/key_pad_style"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="P" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/zmt"
+                style="@style/key_pad_style"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="T" />
+
+            <TextView
+                android:id="@+id/zmu"
+                style="@style/key_pad_style"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="U" />
+
+            <TextView
+                android:id="@+id/zmv"
+                style="@style/key_pad_style"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="V" />
+            <TextView
+                android:id="@+id/zmw"
+                style="@style/key_pad_style"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="W" />
+            <TextView
+                android:id="@+id/zmx"
+                style="@style/key_pad_style"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="X" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/pyszm"
+                style="@style/key_pad_style"
+                android:text="@string/pyszm"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </LinearLayout> 
+
+</LinearLayout>-->

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/select_city_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/common_btn_selector"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/zone_select_city_name"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="重庆市"
+        android:textColor="@color/main_txt_color"
+        android:textSize="@dimen/main_font_size" />
+
+    <View style="@style/HonizalLine" />
+
+</LinearLayout>

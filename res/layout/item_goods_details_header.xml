@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical" >
+
+    <!--
+    <FrameLayout
+        android:id="@+id/goods_picture_rl"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/white" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pictureViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/page_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal" />
+    </FrameLayout>
+    -->
+
+    <RelativeLayout
+        android:id="@+id/merchant_info_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="@dimen/item_left_padding"
+        android:paddingRight="@dimen/item_right_padding"
+        android:paddingTop="5dp" >
+
+        <ImageView
+            android:id="@+id/merchantLogo"
+            android:layout_width="@dimen/smaller_header_size"
+            android:layout_height="@dimen/smaller_header_size"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/merchant_logo" />
+
+        <TextView
+            android:id="@+id/merchant_detail_tv"
+            android:text="详情"
+            android:layout_width="60dp"
+            android:layout_height="26dp"
+            android:gravity="center"
+            android:background="@drawable/zone_index_edit"
+            android:textColor="@color/font_blue"
+            android:textSize="@dimen/main_font_size"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/focusMerchant"
+            android:layout_toRightOf="@id/merchantLogo"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="5dp" >
+
+            <TextView
+                android:id="@+id/name"
+                style="@style/DescMainTitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="顺水渔馆火锅" />
+
+            <TextView
+                android:id="@+id/public_time"
+                style="@style/DescDescTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View style="@style/HonizalLine" />
+
+    <!--
+    <LinearLayout
+        android:id="@+id/function_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/ok_number"
+            style="@style/WeiboContFunctionNormalStyle"
+            android:layout_width="@dimen/function_width"
+            android:padding="5dp"
+            android:src="@drawable/agreed" />
+
+        <TextView
+            android:id="@+id/private_message"
+            style="@style/WeiboContFunctionNormalStyle"
+            android:layout_width="@dimen/function_width"
+            android:text="私信" />
+        
+        <TextView
+            android:id="@+id/share"
+            style="@style/WeiboContFunctionNormalStyle"
+            android:layout_width="@dimen/function_width"
+            android:text="分享" />
+
+        <ImageView
+            android:id="@+id/iamhere"
+            style="@style/WeiboContFunctionNormalStyle"
+            android:layout_width="@dimen/function_width"
+            android:padding="5dp"
+            android:src="@drawable/addr" />
+
+        <ImageView
+            android:id="@+id/phone_number"
+            style="@style/WeiboContFunctionNormalStyle"
+            android:layout_width="@dimen/function_width"
+            android:padding="5dp"
+            android:src="@drawable/telphone" />
+
+        <TextView
+            android:id="@+id/focusMerchant"
+            style="@style/ConcernStyle"
+            android:layout_marginLeft="5dp" />
+    </LinearLayout>
+    -->
+
+    <TextView
+        android:id="@+id/goods_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:lineSpacingExtra="@dimen/weibo_text_line_space"
+        android:paddingBottom="5dp"
+        android:paddingLeft="@dimen/item_left_padding"
+        android:paddingRight="@dimen/item_right_padding"
+        android:paddingTop="5dp"
+        android:text="今天做的菜很好吃 "
+        android:textColor="@color/main_txt_color"
+        android:textSize="@dimen/weibo_text_size"
+        android:visibility="gone" />
+
+    <com.yulinoo.plat.life.ui.widget.ProgressWebView
+        android:id="@+id/goods_html_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="5dp"
+        android:paddingLeft="@dimen/item_left_padding"
+        android:paddingRight="@dimen/item_right_padding"
+        android:paddingTop="5dp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/view_number"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/item_left_padding"
+            android:gravity="center"
+            android:text="浏览 24"
+            android:textColor="@color/assist_txt_color"
+            android:textSize="@dimen/assist_font_size" />
+
+        <TextView
+            android:id="@+id/fgx"
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@id/view_number"
+            android:background="@color/assist_txt_color" />
+
+        <TextView
+            android:id="@+id/comment_count"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/fgx"
+            android:gravity="center"
+            android:text="评论 24"
+            android:textColor="@color/main_txt_color"
+            android:textSize="@dimen/assist_font_size" />
+
+        <TextView
+            android:id="@+id/agree_count"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/item_right_padding"
+            android:gravity="center"
+            android:text="赞  19"
+            android:textColor="@color/main_txt_color"
+            android:textSize="@dimen/assist_font_size" />
+
+        <View
+            style="@style/HonizalLine"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/assist_txt_color" />
+
+        <ImageView
+            android:id="@+id/uparrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:contentDescription="@null"
+            android:src="@drawable/uparrow" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/feel_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:paddingBottom="3dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="3dp"
+        android:text="他们觉得很赞"
+        android:textColor="@color/main_txt_color"
+        android:textSize="@dimen/main_font_size" />
+
+</LinearLayout>

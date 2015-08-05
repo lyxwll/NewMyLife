@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/comment_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/ivIcon"
+            android:layout_width="@dimen/bq_size"
+            android:layout_height="@dimen/bq_size"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:src="@drawable/bq" />
+
+        <TextView
+            android:id="@+id/publish_comment"
+            style="@style/ChatSendButtonStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+
+        <EditText
+            android:id="@+id/comment_et"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/publish_comment"
+            android:layout_toRightOf="@id/ivIcon"
+            android:background="@drawable/message_edit_normal"
+            android:inputType="text"
+            android:textColor="@color/main_txt_color"
+            android:textSize="@dimen/main_font_size" />
+    </RelativeLayout>
+
+    <com.yulinoo.plat.life.ui.widget.MeFaceViewWiget
+        android:id="@+id/meface"
+        android:layout_width="fill_parent"
+        android:layout_height="160dp"
+        android:visibility="gone" />
+
+</LinearLayout>

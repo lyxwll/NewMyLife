@@ -1,0 +1,162 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color" >
+
+    <RelativeLayout
+        android:id="@+id/top_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/me_main_color"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <com.yulinoo.plat.life.ui.widget.BackWidget
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/back_btn"
+            android:background="@drawable/message_edit_normal"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/search_cont_et"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:inputType="text"
+                android:textColor="@color/main_txt_color"
+                android:textSize="@dimen/main_font_size" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/assist_txt_color" />
+
+            <ImageView
+                android:id="@+id/go_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:src="@drawable/ic_action_search" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_rl"
+        android:background="@color/background_color"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal" 
+            android:background="@color/white"
+            >
+
+            <TextView
+                android:id="@+id/hot_search_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="热门搜索"
+                android:textColor="@color/main_txt_color"
+                android:textSize="@dimen/main_font_size" />
+
+            <TextView
+                android:id="@+id/hot_merchant_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="热门商家"
+                android:textColor="@color/assist_txt_color"
+                android:textSize="@dimen/main_font_size" />
+        </LinearLayout>
+
+        <View style="@style/HonizalLine" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_color" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+				<TextView 
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_marginTop="5dp"
+				    android:layout_marginLeft="10dp"
+				    android:background="@color/white"
+				    android:text="大家都在搜..."
+				    android:textColor="@color/assist_txt_color"
+				    android:textSize="@dimen/assist_font_size"
+				    />
+                <LinearLayout
+                    android:id="@+id/hot_search_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp" >
+                </LinearLayout>
+
+                <View
+                    style="@style/HonizalLine"
+                    android:layout_height="1dp"
+                    android:background="@color/jianbian" />
+            </LinearLayout>
+
+            <com.yulinoo.plat.life.ui.widget.MeNormalListView
+                android:id="@+id/hot_merchant_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none" />
+
+            <!-- 
+            <com.yulinoo.plat.life.ui.widget.refresh.SwipeRefreshLayout
+                android:id="@+id/swipe_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" 
+                android:visibility="gone"
+                >
+
+                <com.yulinoo.plat.life.ui.widget.MeNormalListView
+                    android:id="@+id/list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none" />
+            </com.yulinoo.plat.life.ui.widget.refresh.SwipeRefreshLayout> -->
+            <com.yulinoo.plat.life.ui.widget.listview.XListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:cacheColorHint="#00000000"/>
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>

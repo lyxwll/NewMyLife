@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:background="@drawable/around_item_background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/function_icon_1"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@null"
+        android:src="@drawable/msg_white" />
+
+    <TextView
+        android:id="@+id/function_name_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="美食.吃货"
+        android:textColor="@color/white"
+        android:textSize="@dimen/assist_font_size" />
+
+    <TextView
+        android:id="@+id/function_detail_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="川菜  火锅\n西餐 小吃\n......."
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+</LinearLayout>

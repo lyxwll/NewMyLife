@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+     >
+
+    <RelativeLayout
+        android:id="@+id/top_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@color/me_main_color"
+        android:gravity="center_vertical"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <com.yulinoo.plat.life.ui.widget.BackWidget
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:id="@+id/praise_title"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/tab_onclick_color"
+            android:drawableRight="@drawable/down_arrows"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="@string/all_praise"
+            android:textColor="@color/white"
+            android:textSize="@dimen/header_title_font_size"
+            />
+    </RelativeLayout>
+    <!-- 
+    <com.yulinoo.plat.life.ui.widget.refresh.SwipeRefreshLayout
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:layout_below="@id/top_rl"
+        >
+        <com.yulinoo.plat.life.ui.widget.MeNormalListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            />
+    </com.yulinoo.plat.life.ui.widget.refresh.SwipeRefreshLayout> -->
+    <com.yulinoo.plat.life.ui.widget.listview.XListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_below="@id/top_rl"
+        android:cacheColorHint="#00000000"/>
+    <!-- 
+	<com.yulinoo.plat.life.ui.widget.MyListView
+            android:id="@+id/myListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:layout_below="@id/top_rl"
+            /> -->
+	<LinearLayout 
+	    android:id="@+id/my_praise_pop"
+	    android:layout_width="120dp"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="-5dp"
+	    android:orientation="vertical"
+	    android:layout_below="@id/top_rl"
+	    android:layout_centerHorizontal="true"
+	    android:background="@drawable/my_comment"
+	    android:visibility="gone"
+	    >
+	    <TextView 
+	        android:id="@+id/all_praise"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_horizontal"
+	        android:paddingTop="2dp"
+	        android:paddingBottom="2dp"
+	        android:text="@string/all_praise"
+	        android:textSize="16sp"
+	        android:textColor="@color/white"
+	        />
+	    <TextView 
+	        android:id="@+id/praise_me"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_horizontal"
+	        android:paddingTop="2dp"
+	        android:paddingBottom="2dp"
+	        android:text="@string/praise_me"
+	        android:textSize="16sp"
+	        android:textColor="@color/white"
+	        />
+	    <TextView 
+	        android:id="@+id/my_praise"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_horizontal"
+	        android:paddingTop="2dp"
+	        android:paddingBottom="2dp"
+	        android:text="@string/my_praise"
+	        android:textSize="16sp"
+	        android:textColor="@color/white"
+	        />
+	</LinearLayout>
+	
+	
+</RelativeLayout>

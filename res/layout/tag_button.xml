@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="wrap_content"
+      android:layout_height="20dp"
+      android:layout_gravity="center_vertical"
+      android:gravity="center"
+      android:paddingLeft="3dp"
+      android:paddingRight="3dp"
+      android:layout_marginLeft="3dp"
+      android:background="@drawable/tag_button_bar"
+      android:textSize="@dimen/assist_font_size"
+      android:textColor="@color/tag_color"
+      android:text="火锅" />

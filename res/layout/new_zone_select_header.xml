@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/header_height"
+    android:background="@color/me_main_color"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <com.yulinoo.plat.life.ui.widget.BackWidget
+        android:id="@+id/nzs_back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:id="@+id/nzs_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawablePadding="3dp"
+        android:drawableRight="@drawable/down_arrows"
+        android:gravity="center"
+        android:text="选择城市"
+        android:textColor="@color/white"
+        android:textSize="@dimen/header_title_font_size" />
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:id="@+id/tabLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" 
+        >
+    </LinearLayout>
+	<RelativeLayout 
+    android:id="@+id/more_tab_rl"
+    android:layout_width="40dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="right"
+    android:gravity="center"
+    android:background="@color/menu_color"
+    >
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="20dp"
+        android:contentDescription="@null"
+        android:src="@drawable/arrow_right" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="13dp"
+        android:contentDescription="@null"
+        android:src="@drawable/arrow_right" />
+
+</RelativeLayout>
+</FrameLayout>

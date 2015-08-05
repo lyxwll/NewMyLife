@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.yulinoo.plat.life.ui.widget.StretchScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_color"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+			<include layout="@layout/header" />
+
+            <View style="@style/HonizalLine" android:layout_marginTop="20dp"/>
+
+            <RelativeLayout style="@style/RegisterParentStyle" >
+
+                <TextView
+                    android:id="@+id/username_tv"
+                    style="@style/RegisterDescStyle"
+                    android:text="帐号" />
+
+                <EditText
+                    android:id="@+id/username"
+                    style="@style/RegisterInputStyle"
+                    android:layout_toRightOf="@id/username_tv"
+                    android:inputType="number"
+                    android:hint="手机号" />
+            </RelativeLayout>
+
+            <View style="@style/HonizalLine" />
+
+            <RelativeLayout style="@style/RegisterParentStyle" >
+
+                <TextView
+                    android:id="@+id/password_tv"
+                    style="@style/RegisterDescStyle"
+                    android:text="密码" />
+
+                <EditText
+                    android:id="@+id/password"
+                    style="@style/RegisterInputStyle"
+                    android:layout_toRightOf="@id/password_tv"
+                    android:inputType="textPassword" />
+            </RelativeLayout>
+
+            <View style="@style/HonizalLine" />
+
+            <TextView
+                android:id="@+id/login"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_ok_onclick_color"
+                android:gravity="center"
+                android:text="登录"
+                android:textColor="@color/white"
+                android:textSize="@dimen/main_font_size"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp" 
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:id="@+id/register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center_vertical"
+                    android:text="用户注册"
+                    android:textSize="@dimen/main_font_size"
+                    android:textColor="@color/main_txt_color"
+                    />
+
+                <TextView
+                    android:id="@+id/forgot_pwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:text="密码找回"
+                    android:textSize="@dimen/main_font_size"
+                    android:textColor="@color/main_txt_color"
+                    />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/login_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="50dp"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/login_bg"
+                />
+        </LinearLayout>
+    </com.yulinoo.plat.life.ui.widget.StretchScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="me_main_color">#ff6700</color>
+    <color name="menu_color">#eeeeee</color>
+    <color name="background_color">#e9e9e9</color>
+    <color name="jianbian">#bbbbbb</color>
+    <color name="addr_color">#5a98eb</color><!-- 用于描述含有地址信息的字体颜色 -->
+    <color name="my_yellow">#fab732</color>
+    <color name="main_txt_color">#545454</color><!-- 主打内容字体 颜色-->
+    <color name="assist_txt_color">#919191</color><!-- 辅助性字体颜色 -->
+    <color name="font_gray_thin">#f2f2f2</color>
+    <color name="gray">#CCCCCC</color>
+    <color name="tag_color">#ff6700</color>
+    <color name="myneighbour_stroke_color">#236cce</color>
+    <color name="myneighbour_fill_color">#385a98eb</color>
+    
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="purple">#863cab</color>
+    <color name="launcher1">#1bbc9c</color>
+    <color name="launcher2">#ff6801</color>
+    <color name="launcher3">#f7c643</color>
+    <color name="shadow">#aa000000</color>
+    
+    
+    
+    
+    <color name="not_concern_color">#ffef6d55</color>
+    <color name="concerned_color">#fff2f2f2</color>
+    
+    <color name="desc_main_text_colorgggggggggg">#2f2f2f</color>
+    <color name="desc_desc_text_color">#9f9f9f</color>
+    
+    
+     <color name="zone_select_border_focus">#ff6600</color>
+    <color name="zone_select_border_unfocus">#9f9f9f</color>
+    
+    
+    <color name="font_blue">#5a98eb</color>
+    <color name="font_orange">#ff6600</color>
+    <color name="font_red">#fb3532</color>
+    
+    
+    
+    
+    <!-- 
+    <color name="main_tab_bg_color">#eeeeee</color>
+    
+    
+    
+    <color name="blue">#0076AF</color>
+    
+    <color name="font_top">#717285</color>
+   
+    <color name="btn_ok_color">#ff6600</color>
+    <color name="btn_no_color">#EAEAEA</color>
+    
+    <color name="red">#fe312e</color>
+    <color name="mytab_selected">#FF5400</color>
+    <color name="map_tv">#FF5400</color>
+    <color name="listview_item_color">#FAFAFA</color>
+    <color name="background">#FAFAFA</color> -->
+    
+
+    <color name="list_title_color">#333333</color>
+    
+    <color name="sticky_listview_header_normal">#9A9999</color>
+    <color name="sticky_listview_header_pressed">#c0392b</color>
+    
+</resources>

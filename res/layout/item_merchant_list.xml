@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/index_padding_left"
+    android:paddingRight="@dimen/index_padding_right"
+    android:paddingTop="@dimen/merchant_list_item_toppadding" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/item_left_padding"
+        android:paddingRight="@dimen/item_right_padding" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/categoryName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="周边美食"
+                android:textColor="@color/main_txt_color"
+                android:textSize="@dimen/assist_font_size" />
+
+            <TextView
+                android:id="@+id/forumName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="社区英雄帖"
+                android:textColor="@color/main_txt_color"
+                android:textSize="@dimen/assist_font_size" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/merchantTag"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/view_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="浏览数：999+"
+            android:textColor="@color/assist_txt_color"
+            android:textSize="@dimen/assist_font_size" />
+    </LinearLayout>
+
+    <View style="@style/HonizalLine" />
+
+    <LinearLayout
+        android:id="@+id/uinfo_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="@dimen/item_left_padding"
+        android:paddingRight="@dimen/item_right_padding"
+        android:paddingTop="5dp" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/merchantLogo"
+                android:layout_width="@dimen/smaller_header_size"
+                android:layout_height="@dimen/smaller_header_size"
+                android:contentDescription="@null"
+                android:src="@drawable/man_selected" />
+
+            <FrameLayout
+                android:id="@+id/merchant_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginLeft="32dp"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/authority"
+                    android:contentDescription="@null" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="认证"
+                    android:textColor="@color/white"
+                    android:textSize="8sp" />
+            </FrameLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/item_left_padding" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/name"
+                    style="@style/DescMainTitleStyle"
+                    android:text="顺水渔馆火锅" />
+
+                <ImageView
+                    android:id="@+id/usr_sex"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/man_selected" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/public_time"
+                style="@style/DescDescTextStyle" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/focusMerchant"
+            style="@style/ConcernStyle" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/picture_fl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/weibo_picture"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/item_left_padding"
+        android:paddingRight="@dimen/item_right_padding" >
+
+        <TextView
+            android:id="@+id/merchantAddr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/merchant_address_onclick_color"
+            android:drawableLeft="@drawable/addr"
+            android:drawablePadding="3dp"
+            android:gravity="right"
+            android:text="洋子江商务小区"
+            android:textColor="@color/addr_color"
+            android:textSize="@dimen/assist_font_size" />
+
+        <TextView
+            android:id="@+id/lastCont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="@dimen/weibo_text_line_space"
+            android:maxLines="3"
+            android:text="地道的火锅，味道巴适惨了，欢迎大家光临！"
+            android:textColor="@color/main_txt_color"
+            android:textSize="@dimen/weibo_text_size" />
+    </LinearLayout>
+
+    <View style="@style/HonizalLine" />
+
+    <include layout="@layout/included_cont_item_bottom" />
+
+    <View
+        style="@style/HonizalLine"
+        android:layout_height="1dp"
+        android:background="@color/jianbian" />
+
+</LinearLayout>

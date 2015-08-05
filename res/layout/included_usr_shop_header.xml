@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/top_fl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_color" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="210dp" >
+
+                <ImageView
+                    android:id="@+id/background_img_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@color/black"
+                    android:contentDescription="@null"
+                    android:scaleType="fitXY"
+                    android:src="@null" />
+
+                <LinearLayout
+                    android:id="@+id/name_and_num_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="22dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/shop_name_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="张三"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/main_font_size" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/fans_number_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="粉丝:30"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/assist_font_size" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/addr_and_sign_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@color/background_color"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="100dp" >
+
+                    <EditText
+                        android:id="@+id/shop_sign"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="编辑商家签名 "
+                        android:paddingBottom="5dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp"
+                        android:textColorHint="@color/black"
+                        android:textSize="@dimen/assist_font_size" />
+
+                    <RelativeLayout
+                        android:id="@+id/function_ll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/background_color"
+                        android:gravity="center_horizontal|left"
+                        android:paddingBottom="10dp" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/focusMerchant"
+                                android:layout_width="65dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/focus_merchant_background"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="+  关注"
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+
+                            <RelativeLayout
+                                android:id="@+id/leave_message_rl"
+                                android:layout_width="65dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/leave_message_background"
+                                android:gravity="center"
+                                android:padding="5dp" >
+
+                                <ImageView
+                                    android:id="@+id/leave_message_iv"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:contentDescription="@null"
+                                    android:src="@drawable/usr_shop_msg" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_toRightOf="@id/leave_message_iv"
+                                    android:text="留言"
+                                    android:textColor="@color/me_main_color"
+                                    android:textSize="14sp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/share_rl"
+                                android:layout_width="65dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/leave_message_background"
+                                android:gravity="center"
+                                android:padding="5dp" >
+
+                                <ImageView
+                                    android:id="@+id/share_iv"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:contentDescription="@null"
+                                    android:src="@drawable/usr_shop_share" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_toRightOf="@id/share_iv"
+                                    android:text="分享"
+                                    android:textColor="@color/me_main_color"
+                                    android:textSize="14sp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/usr_header_1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@null"
+            android:src="@drawable/merchant_logo" />
+    </FrameLayout>
+
+    <View style="@style/HonizalLine" />
+
+    <!-- 商家信息部分 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <!-- 地址 -->
+
+        <RelativeLayout
+            android:id="@+id/address_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp" >
+
+            <ImageView
+                android:id="@+id/address_iv"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentLeft="true"
+                android:contentDescription="@null"
+                android:src="@drawable/usr_shop_addr" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/address_iv"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/address_from_where_assist_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="来自 :"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/address_from_where_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/address_from_where_assist_tv"
+                        android:text="欣年新城(附近)"
+                        android:textColor="@color/font_blue"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/address_assist_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="地址 :"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/address_address_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/address_assist_tv"
+                        android:text="新南支路2号 附11号1-1商铺"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/address_detial_iv"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:src="@drawable/arrow_right" />
+        </RelativeLayout>
+
+        <View style="@style/HonizalLine" />
+
+        <!-- 商家电话 -->
+
+        <RelativeLayout
+            android:id="@+id/telphone_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp" >
+
+            <ImageView
+                android:id="@+id/telphone_iv"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:contentDescription="@null"
+                android:src="@drawable/usr_shop_tel" />
+
+            <TextView
+                android:id="@+id/shouji_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/telphone_iv"
+                android:text="13608888888"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:src="@drawable/arrow_right" />
+        </RelativeLayout>
+
+        <View style="@style/HonizalLine" />
+        <!-- 商家介绍 -->
+
+        <RelativeLayout
+            android:id="@+id/detial_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp" >
+
+            <ImageView
+                android:id="@+id/introduce_iv"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentLeft="true"
+                android:contentDescription="@null"
+                android:src="@drawable/usr_shop_infro" />
+
+            <ImageView
+                android:id="@+id/introduce_iv1"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:src="@drawable/arrow_right" />
+
+            <TextView
+                android:id="@+id/introduce_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:maxLines="2"
+                android:layout_toLeftOf="@id/introduce_iv1"
+                android:layout_toRightOf="@id/introduce_iv"
+                android:text="本店为顺水鱼馆的连锁店之一,位于冉家坝中心地带,是重庆最......"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View style="@style/HonizalLine" />
+
+    <include layout="@layout/included_usr_shop_cont_item_bottom" />
+
+    <View style="@style/HonizalLine" />
+
+    <com.yulinoo.plat.life.ui.widget.MyHorizontalScrollView
+        android:id="@+id/product_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/menu_color"
+        android:scrollbars="none" >
+
+        <com.yulinoo.plat.life.ui.widget.MyTab
+            android:id="@+id/mytab"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/usr_zone_menu_height"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" />
+    </com.yulinoo.plat.life.ui.widget.MyHorizontalScrollView>
+
+    <View
+        android:id="@+id/shadow_line"
+        style="@style/HonizalLine"
+        android:layout_height="1dp"
+        android:background="@color/jianbian" />
+
+</LinearLayout>

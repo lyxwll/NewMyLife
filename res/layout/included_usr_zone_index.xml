@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/IndexTitleParent" >
+
+        <TextView
+            style="@style/IndexTitleTxtStyle"
+            android:text="个人信息" />
+
+        <TextView
+            android:id="@+id/edit_my_info"
+            android:layout_width="60dp"
+            android:layout_height="26dp"
+            android:background="@drawable/zone_index_edit"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp" 
+            android:textSize="@dimen/main_font_size"
+            />
+    </RelativeLayout>
+
+    <View style="@style/HonizalLine" />
+
+    <RelativeLayout style="@style/IndexParent" >
+
+        <TextView
+            android:id="@+id/nk_tv"
+            style="@style/IndexLeft"
+            android:text="昵称" />
+
+        <ImageView
+            android:id="@+id/srand_nickname"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:contentDescription="@null"
+            android:src="@drawable/srand" />
+
+        <EditText
+            android:id="@+id/index_nickname"
+            style="@style/IndexRight"
+            android:layout_toLeftOf="@id/srand_nickname"
+            android:layout_toRightOf="@id/nk_tv"
+            android:enabled="false"
+            android:text="张三" />
+    </RelativeLayout>
+
+    <View style="@style/HonizalLine" />
+
+    <com.yulinoo.plat.life.ui.widget.MeRadioWidget
+        android:id="@+id/sex_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" />
+
+    <View style="@style/HonizalLine" />
+
+    <RelativeLayout style="@style/IndexParent" >
+
+        <TextView
+            android:id="@+id/index_addr_tv"
+            style="@style/IndexLeft"
+            android:text="地址" />
+
+        <EditText
+            android:id="@+id/index_addr"
+            style="@style/IndexRight"
+            android:layout_toRightOf="@id/index_addr_tv"
+            android:enabled="false"            
+             />
+    </RelativeLayout>
+    <View style="@style/HonizalLine" />
+
+    <RelativeLayout style="@style/IndexParent" >
+
+        <TextView
+            android:id="@+id/qm_tv"
+            style="@style/IndexLeft"
+            android:text="签名" />
+
+        <EditText
+            android:id="@+id/index_userchk"
+            style="@style/IndexRight"
+            android:layout_toRightOf="@id/qm_tv"
+            android:enabled="false"
+            android:inputType="textMultiLine"
+            android:minLines="2" />
+    </RelativeLayout>
+
+    <View style="@style/HonizalLine" android:layout_marginBottom="300dp" />
+
+</LinearLayout>

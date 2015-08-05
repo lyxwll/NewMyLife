@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/header" />
+
+    <com.yulinoo.plat.life.ui.widget.StretchScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical" >
+
+                <View style="@style/HonizalLine" />
+
+                <RelativeLayout style="@style/RegisterParentStyle" >
+
+                    <TextView
+                        android:id="@+id/username_tv"
+                        style="@style/RegisterDescStyle"
+                        android:text="手机号" />
+
+                    <View
+                        android:id="@+id/uname_fgx"
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:layout_toRightOf="@id/username_tv"
+                        android:background="@color/background_color" />
+
+                    <EditText
+                        android:id="@+id/username_zh"
+                        style="@style/RegisterInputStyle"
+                        android:layout_toRightOf="@id/uname_fgx"
+                        android:hint="只用于登录和忘记密码用"
+                        android:inputType="number" />
+
+                    <TextView
+                        android:id="@+id/getValCode"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/comment_btn_1"
+                        android:gravity="center"
+                        android:text="获取验证码"
+                        android:textColor="@color/main_txt_color"
+                        android:textSize="@dimen/assist_font_size" />
+                </RelativeLayout>
+
+                <View
+                    style="@style/HonizalLine"
+                    android:visibility="gone" />
+
+                <com.yulinoo.plat.life.ui.widget.MeRadioWidget
+                    android:id="@+id/sex_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:visibility="gone" />
+
+                <View style="@style/HonizalLine" />
+
+                <RelativeLayout style="@style/RegisterParentStyle" >
+
+                    <TextView
+                        android:id="@+id/valCode_tv"
+                        style="@style/RegisterDescStyle"
+                        android:text="验证码" />
+
+                    <View
+                        android:id="@+id/valCode_fgx"
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:layout_toRightOf="@id/valCode_tv"
+                        android:background="@color/background_color" />
+
+                    <EditText
+                        android:id="@+id/valCode"
+                        style="@style/RegisterInputStyle"
+                        android:layout_toRightOf="@id/valCode_fgx"
+                        android:hint="请输入手机收到的验证码"
+                        android:inputType="number" />
+                </RelativeLayout>
+
+                <View style="@style/HonizalLine" />
+
+                <View
+                    style="@style/HonizalLine"
+                    android:layout_marginTop="20dp" />
+
+                <View style="@style/HonizalLine" />
+
+                <RelativeLayout style="@style/RegisterParentStyle" >
+
+                    <TextView
+                        android:id="@+id/password_tv"
+                        style="@style/RegisterDescStyle"
+                        android:text="新密码" />
+
+                    <View
+                        android:id="@+id/password_fgx"
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:layout_toRightOf="@id/password_tv"
+                        android:background="@color/background_color" />
+
+                    <EditText
+                        android:id="@+id/password"
+                        style="@style/RegisterInputStyle"
+                        android:layout_toRightOf="@id/password_fgx"
+                        android:inputType="textPassword" />
+                </RelativeLayout>
+
+                <View style="@style/HonizalLine" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/resetPassword_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_ok_onclick_color"
+                android:gravity="center"
+                android:text="重置密码"
+                android:textColor="@color/white"
+                android:textSize="@dimen/main_font_size" />
+        </LinearLayout>
+    </com.yulinoo.plat.life.ui.widget.StretchScrollView>
+
+</LinearLayout>

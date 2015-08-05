@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_color"
+    android:paddingLeft="@dimen/index_padding_left"
+    android:paddingRight="@dimen/index_padding_right"
+    android:paddingTop="@dimen/merchant_list_item_toppadding" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/usr_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/head"
+                android:layout_width="@dimen/smaller_header_size"
+                android:layout_height="@dimen/smaller_header_size"
+                android:layout_margin="5dp"
+                android:background="@drawable/man_selected"
+                android:contentDescription="@null" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/userName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="用户名"
+                        android:singleLine="true"
+                        android:textColor="@color/main_txt_color"
+                        android:textSize="@dimen/main_font_size" />
+
+                    <ImageView
+                        android:id="@+id/usr_sex"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/userName"
+                        android:src="@drawable/man_selected" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:layout_margin="3dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/publishTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                       
+                        android:text="9-15 22:22"
+                        android:textColor="@color/assist_txt_color"
+                        android:textSize="@dimen/assist_font_size" />
+
+                    <TextView
+                        android:id="@+id/userAddr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="来自圣地阳光"
+                        android:textColor="@color/font_blue"
+                        android:textSize="@dimen/assist_font_size" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/HonizalLine" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="萨顶顶顶顶顶顶顶真聪明么"
+            android:textColor="@color/main_txt_color"
+            android:textSize="@dimen/weibo_text_size" />
+
+        <View
+            style="@style/HonizalLine"
+            android:layout_height="1dp"
+            android:background="@color/jianbian" />
+    </LinearLayout>
+
+</FrameLayout>

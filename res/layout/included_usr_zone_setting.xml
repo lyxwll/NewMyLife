@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical" >
+
+    <View
+        style="@style/HonizalLine"
+        android:layout_marginTop="20dp" />
+
+    <View style="@style/HonizalLine" />
+    <RelativeLayout
+        android:id="@+id/surgestion"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/common_btn_selector"
+        >
+
+        <ImageView
+            android:id="@+id/suggest_arrow"
+            style="@style/MyZoneSettingRightStyle" />
+
+        <TextView
+            style="@style/MyZoneSettingLeftStyle"
+            android:layout_toLeftOf="@id/suggest_arrow"
+            android:textSize="@dimen/assist_font_size"
+            android:textColor="@color/assist_txt_color"
+            android:text="@string/suggestion_reback" />
+    </RelativeLayout>
+
+    <View style="@style/HonizalLine" />
+
+    <RelativeLayout
+        android:id="@+id/about_500me"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/common_btn_selector">
+
+        <ImageView
+            android:id="@+id/suggest_arrow2"
+            style="@style/MyZoneSettingRightStyle" />
+
+        <TextView
+            style="@style/MyZoneSettingLeftStyle"
+            android:layout_toLeftOf="@id/suggest_arrow2"
+            android:textSize="@dimen/assist_font_size"
+            android:textColor="@color/assist_txt_color"
+            android:text="@string/about_500me_life" />
+    </RelativeLayout>
+
+    <View style="@style/HonizalLine" />
+    <RelativeLayout
+        android:id="@+id/user_protocal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/common_btn_selector" >
+
+        <ImageView
+            android:id="@+id/suggest_arrow3"
+            style="@style/MyZoneSettingRightStyle" />
+
+        <TextView
+            style="@style/MyZoneSettingLeftStyle"
+            android:layout_toLeftOf="@id/suggest_arrow3"
+            android:textSize="@dimen/assist_font_size"
+            android:textColor="@color/assist_txt_color"
+            android:text="用户协议" />
+    </RelativeLayout>
+
+    <View style="@style/HonizalLine" />
+    <RelativeLayout
+        android:id="@+id/modify_pwd_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/common_btn_selector" >
+
+        <ImageView
+            android:id="@+id/modify_pwd_arrow"
+            style="@style/MyZoneSettingRightStyle" />
+
+        <TextView
+            style="@style/MyZoneSettingLeftStyle"
+            android:layout_toLeftOf="@id/modify_pwd_arrow"
+            android:textSize="@dimen/assist_font_size"
+            android:textColor="@color/assist_txt_color"
+            android:text="修改密码" />
+    </RelativeLayout>
+
+    <View style="@style/HonizalLine" />
+    <!-- 
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/suggest_arrow4"
+            style="@style/MyZoneSettingRightStyle" 
+            android:background="@null"
+            android:text="1.1MB"
+            />
+
+        <TextView
+            style="@style/MyZoneSettingLeftStyle"
+            android:layout_toLeftOf="@id/suggest_arrow4"
+            android:text="清除缓存" />
+    </RelativeLayout> 
+    <View style="@style/HonizalLine" />-->
+    <TextView 
+        android:id="@+id/usr_logout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:background="@drawable/common_btn_selector"
+        android:textColor="@color/main_txt_color"
+        android:textSize="@dimen/main_font_size"
+        android:text="退出帐号"
+        />
+
+</LinearLayout>

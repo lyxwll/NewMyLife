@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/font_blue"
+    android:cacheColorHint="@android:color/transparent"
+    android:orientation="vertical" >
+ <!-- android:background="@drawable/alert_bg" -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ProgressBar
+            android:id="@+id/dialog_progress"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="6.0dip"
+            android:indeterminateDrawable="@drawable/progress_medium" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/progress_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:textScaleX="1.0"
+                android:textSize="14sp"
+                android:typeface="normal" />
+
+            <TextView
+                android:id="@+id/progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="10dp"
+                android:text="0%"
+                android:textColor="@color/white"
+                android:textScaleX="1.0"
+                android:textSize="16sp"
+                android:typeface="normal"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

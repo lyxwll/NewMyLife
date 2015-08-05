@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/main_title_header"
+        layout="@layout/main_title_header" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.yulinoo.plat.life.ui.widget.NeighbourCircleWidget
+            android:id="@+id/neighbour_circle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <!-- 功能部分 -->
+
+        <com.yulinoo.plat.life.ui.widget.MulinListView
+            android:id="@+id/main_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@color/white"
+            android:cacheColorHint="#00000000"
+            android:scrollbars="none" />
+
+        <LinearLayout
+            android:id="@+id/weahter_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@drawable/weather"
+                android:orientation="horizontal" >
+
+                <FrameLayout
+                    android:id="@+id/more_weather"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" >
+
+                    <ImageView
+                        android:id="@+id/more_weather_pic"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/drop_down" />
+                </FrameLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/weather_line" />
+
+                <TextView
+                    android:id="@+id/today_weather_c"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="aaaaaa"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/main_font_size" />
+
+                <TextView
+                    android:id="@+id/today_weather_f"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="晴转多云,微风"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/main_font_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/weather_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/weather_more"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:text="明天"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/main_font_size" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/weather_line" />
+
+                    <TextView
+                        android:id="@+id/tomorrow_c"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="20-30C"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/main_font_size" />
+
+                    <TextView
+                        android:id="@+id/tomorrow_f"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="晴转多云,微风"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/main_font_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:text="后天"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/main_font_size" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/weather_line" />
+
+                    <TextView
+                        android:id="@+id/after_c"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="20-30C"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/main_font_size" />
+
+                    <TextView
+                        android:id="@+id/after_f"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="晴转多云,微风"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/main_font_size" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/undo_mapview"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="top|right"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:contentDescription="@null"
+            android:src="@drawable/undo" />
+    </FrameLayout>
+
+</LinearLayout>

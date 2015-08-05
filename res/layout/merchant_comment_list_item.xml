@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    android:paddingBottom="10dp" >
+
+    <RelativeLayout
+        android:id="@+id/content_above"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/responseHeaderPicture"
+            android:layout_width="@dimen/medium_header_size"
+            android:layout_height="@dimen/medium_header_size"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:contentDescription="@null"
+            android:src="@drawable/man_selected" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/responseHeaderPicture"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/responseNickName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="刘的黑"
+                    android:textColor="@color/main_txt_color"
+                    android:textSize="@dimen/main_font_size" />
+
+                <TextView
+                    android:id="@+id/response_usr_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:text="圣地阳光"
+                    android:textColor="@color/font_blue"
+                    android:textSize="@dimen/assist_font_size" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/response_usr_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="1小时前"
+                    android:textColor="@color/assist_txt_color"
+                    android:textSize="@dimen/assist_font_size" />
+
+                <TextView
+                    android:id="@+id/comment_direction_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/font_blue"
+                    android:textSize="@dimen/assist_font_size" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/responseContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/main_txt_color"
+                android:textSize="@dimen/assist_font_size" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/content_zt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/font_gray_thin"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/goodsPublishUsrHeaderPicture"
+                android:layout_width="@dimen/smaller_header_size"
+                android:layout_height="@dimen/smaller_header_size"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:contentDescription="@null"
+                android:src="@drawable/man_selected" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/goodsPublishUsrHeaderPicture"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/goodsPublishUsrName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="刘的黑"
+                    android:textColor="@color/main_txt_color"
+                    android:textSize="@dimen/main_font_size" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/commented_usr_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@color/assist_txt_color"
+                        android:textSize="@dimen/assist_font_size" />
+
+                    <TextView
+                        android:id="@+id/commented_usr_area"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/font_blue"
+                        android:textSize="@dimen/assist_font_size" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/goodsPublishContent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:maxLines="2"
+                    android:textColor="@color/assist_txt_color"
+                    android:textSize="@dimen/assist_font_size" />
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <View
+        style="@style/HonizalLine"
+        android:layout_height="1dp"
+        android:background="@color/jianbian" />
+
+</LinearLayout>

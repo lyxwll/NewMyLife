@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    android:paddingTop="10dp" >
+
+    <RelativeLayout style="@style/IndexTitleParent">
+
+        <TextView
+            style="@style/IndexTitleTxtStyle"
+            android:text="@string/merchant_info"
+             />
+
+        <TextView
+            android:id="@+id/index_edit_my_shop_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp" />
+    </RelativeLayout>
+
+    <View style="@style/HonizalLine" />
+
+    <RelativeLayout style="@style/IndexParent" >
+
+        <TextView
+            android:id="@+id/shop_name_tv"
+            style="@style/IndexLeft"
+            android:text="@string/shop_name" />
+
+        <EditText
+            android:id="@+id/index_merchant_name_et"
+            style="@style/IndexRight"
+            android:layout_toRightOf="@id/shop_name_tv"
+            android:enabled="false"
+            android:text="火锅店" />
+    </RelativeLayout>
+
+    <View style="@style/HonizalLine" />
+
+    <RelativeLayout style="@style/IndexParent" >
+
+        <TextView
+            android:id="@+id/shop_area_tv"
+            style="@style/IndexLeft"
+            android:text="@string/shop_area" />
+
+        <TextView
+            android:id="@+id/index_shop_area"
+            style="@style/IndexRight"
+            android:layout_toRightOf="@id/shop_area_tv"
+            android:drawableRight="@drawable/arrow_right"
+            android:enabled="false"
+            android:text="洋子江商务小区" />
+    </RelativeLayout>
+
+    <View style="@style/HonizalLine" />
+
+    <RelativeLayout style="@style/IndexParent" >
+
+        <TextView
+            android:id="@+id/shop_position_tv"
+            style="@style/IndexLeft"
+            android:text="@string/shop_position" />
+
+        <TextView
+            android:id="@+id/index_shop_position"
+            style="@style/IndexRight"
+            android:layout_toRightOf="@id/shop_position_tv"
+            android:drawableRight="@drawable/arrow_right"
+            android:enabled="false" />
+    </RelativeLayout>
+
+    <View style="@style/HonizalLine" />
+
+    <RelativeLayout style="@style/IndexParent" >
+
+        <TextView
+            android:id="@+id/shop_category_tv"
+            style="@style/IndexLeft"
+            android:text="@string/shop_category" />
+
+        <TextView
+            android:id="@+id/index_shop_category"
+            style="@style/IndexRight"
+            android:layout_toRightOf="@id/shop_category_tv"
+            android:drawableRight="@drawable/arrow_right"
+            android:enabled="false" />
+    </RelativeLayout>
+
+    <View style="@style/HonizalLine" />
+
+    <RelativeLayout style="@style/IndexParent" >
+
+        <TextView
+            android:id="@+id/shop_addr_tv"
+            style="@style/IndexLeft"
+            android:text="@string/shop_addr" />
+
+        <EditText
+            android:id="@+id/index_shop_addr_et"
+            style="@style/IndexRight"
+            android:layout_toRightOf="@id/shop_addr_tv"
+            android:enabled="false" />
+    </RelativeLayout>
+
+    <View style="@style/HonizalLine" />
+
+    <RelativeLayout style="@style/IndexParent" >
+
+        <TextView
+            android:id="@+id/shop_telphone_tv"
+            style="@style/IndexLeft"
+            android:text="@string/shop_telphone" />
+
+        <EditText
+            android:id="@+id/index_shop_telphone_et"
+            style="@style/IndexRight"
+            android:layout_toRightOf="@id/shop_telphone_tv"
+            android:enabled="false" />
+    </RelativeLayout>
+
+    <View style="@style/HonizalLine" />
+
+    <RelativeLayout
+        style="@style/IndexParent"
+        android:layout_height="60dp" >
+
+        <TextView
+            android:id="@+id/shop_sign_name_tv"
+            style="@style/IndexLeft"
+            android:text="@string/shop_sign_name" />
+
+        <EditText
+            android:id="@+id/index_shop_sign_name_et"
+            style="@style/IndexRight"
+            android:layout_toRightOf="@id/shop_sign_name_tv"
+            android:enabled="false"
+            android:gravity="left|top"
+            android:inputType="textMultiLine"
+            android:minLines="2" />
+    </RelativeLayout>
+
+    <View style="@style/HonizalLine" />
+
+    <RelativeLayout
+        style="@style/IndexParent"
+        android:layout_height="60dp" >
+
+        <TextView
+            android:id="@+id/shop_desc_tv"
+            style="@style/IndexLeft"
+            android:text="@string/shop_desc" />
+
+        <EditText
+            android:id="@+id/index_shop_desc_et"
+            style="@style/IndexRight"
+            android:layout_toRightOf="@id/shop_desc_tv"
+            android:enabled="false"
+            android:inputType="textMultiLine"
+            android:minLines="2" />
+    </RelativeLayout>
+
+</LinearLayout>

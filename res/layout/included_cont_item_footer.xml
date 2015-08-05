@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/index_padding_left"
+    android:paddingRight="@dimen/index_padding_right"
+    android:paddingTop="@dimen/merchant_list_item_toppadding" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/item_left_padding"
+        android:paddingRight="@dimen/item_right_padding" >
+
+
+        <TextView
+            android:id="@+id/lastCont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/no_more_data_display"
+            android:textColor="@color/main_txt_color"
+            android:textSize="@dimen/weibo_text_size" />
+    </LinearLayout>
+
+
+    <View
+        style="@style/HonizalLine"
+        android:layout_height="1dp"
+        android:background="@color/jianbian" />
+
+</LinearLayout>

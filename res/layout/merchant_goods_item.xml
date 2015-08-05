@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/index_padding_left"
+    android:paddingRight="@dimen/index_padding_right"
+    android:paddingTop="@dimen/merchant_list_item_toppadding" >
+
+    <TextView
+        android:id="@+id/lastCont"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:lineSpacingExtra="3dp"
+        android:maxLines="3"
+            android:ellipsize="end"
+        android:padding="@dimen/item_left_padding"
+        android:textColor="@color/main_txt_color"
+        android:textSize="@dimen/weibo_text_size" />
+
+    <FrameLayout
+        android:id="@+id/picture_fl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/weibo_picture"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/white" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/public_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="三天前"
+            android:textColor="@color/assist_txt_color"
+            android:textSize="@dimen/assist_font_size" />
+
+        <TextView
+            android:id="@+id/merchantAddr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/public_time"
+            android:textColor="@color/addr_color"
+            android:textSize="@dimen/assist_font_size" />
+        <TextView 
+            android:id="@+id/del_goods"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:background="@drawable/common_btn_selector"
+            android:text="删除"
+            android:textSize="@dimen/assist_font_size" 
+            android:textColor="@color/font_red"
+            />
+    </RelativeLayout>
+
+    <View style="@style/HonizalLine" />
+
+    <include layout="@layout/included_my_weibo_bottom" />
+
+    <View
+        style="@style/HonizalLine"
+        android:layout_height="1dp"
+        android:background="@color/jianbian" />
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/back_btn"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="10dp"
+    android:background="@drawable/back_round"
+    >
+    <TextView
+        android:id="@+id/back_tv"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/back_white_btn" />
+
+    <TextView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@id/back_tv"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="返回"
+        android:textColor="@color/white" 
+        android:textSize="@dimen/main_font_size"
+        />
+
+</RelativeLayout>
